@@ -3,46 +3,48 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <title>My Awesome Company Contact Page</title>
+    <title>Volunteer Page</title>
   </head>
   <body>
 
-    <h1>Company Inc.</h1>
-    <h2>For all your incorporated company needs</h2>
+    <h1>Non Profit Volunteer Sheet</h1>
+    <h2>Please fill out the information below</h2>
 
-    <!-- First, create a form tag where our inputs will be nested -->
+   
+<form>
 
+      <!-- 'fullname'-->
+      <label for="fullname">Fullname</label>
+      <input type="text" name="fullname" placeholder="Enter Name" id="fullname" required/>
 
-      <!-- Add a label for 'fullname'-->
+      <!--  'email'-->
+      <label for="email">email</label>
+      <input type="email" name="email" id="email" placeholder="Enter Email" required/>
 
-      <!-- Add a text input with the id and name attributes set to 'fullname' -->
-      <!-- Include the place holder text "Enter Name" and make this input required -->
-
-
-      <!-- Add a label for 'email'-->
-
-      <!-- Add a email input with the id and name attributes set to 'email' -->
-      <!-- Include the place holder text "Enter Email" and make this input required -->
-
-
-      <!-- Add a label for 'phone'-->
-
-      <!-- Add a telephone input with the id and name attributes set to 'phone' -->
-      <!-- Include the place holder text "Enter Telephone (optional)" -->
+      <!--  'phone'-->
+      <label for="phone">Phone</label>
+      <input type="tel" name="phone" id="phone" placeholder="Enter Telephone (optional)" />
 
 
-      <!-- Add a label for 'message'-->
-
-      <!-- Add a textarea tag with the id and name attributes set to 'message' -->
-      <!-- Include the place holder text "Enter Message" -->
-
-
-      <!-- Add a checkbox input with the id set to 'checkbox' -->
+      <!--  'message'-->
+      <label for="message">Additional info</label>
+      <textarea name="message" id="message" placeholder="Enter Message"></textarea>
 
 
+      <!-- 'checkbox' -->
+      <label for="checkbox">Days You Are Available?</label>
+      <input type="checkbox" name="day-1" value="Monday"/>Monday <br />
+      <input type="checkbox" name="day-2" value="Tuesday"/>Tuesday <br />
+      <input type="checkbox" name="day-3" value="Wednesday"/>Wednesday <br />
+      <input type="checkbox" name="day-4" value="Thursday"/>Thursday <br />
+      <input type="checkbox" name="day-5" value="Friday"/>Friday <br />
+      <input type="checkbox" name="day-6" value="Saturday"/>Saturday <br />
+      <input type="checkbox" name="day-7" value="Sunday"/>Sunday <br />
 
-      <!-- Add an input with the type set to 'submit' -->
 
-    
+      <!-- 'submit' -->
+      <input type="submit" value="Ready to Help "/>
+
+    </form>
   </body>
 </html>
